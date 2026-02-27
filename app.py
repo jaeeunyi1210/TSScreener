@@ -266,4 +266,12 @@ if pick:
     exp = load_ai_explanations_latest(sid)
     if not exp.empty:
         st.subheader("AI Score Evidence (Top articles)")
-        st.dataframe(exp, use_container_width=True)
+        # convert URLs to clickable links that open in a new tab
+        exp2 = exp.copy()
+        def make_link(row):
+            url = row.get("article_url", "")
+            title = row.get("title", url)
+            return f'<a href="{url}" target="_blank">{title}</a>'
+        exp2["article"] = exp2.apply(make_link, axis=1)
+        # show selected columns, render as HTML
+        st.markdown(exp2[["article","topic","contribution","reason"]].to_html(escape=False, index=False), unsafe_allow_html=True)
