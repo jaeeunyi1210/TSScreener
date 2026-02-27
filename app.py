@@ -151,9 +151,11 @@ def build_ranking(prices: pd.DataFrame) -> pd.DataFrame:
 def fmt_pct(x):
     return f"{x*100:.2f}%"
 
-st.set_page_config(page_title="Sector + Commodities Screener (MVP)", layout="wide")
-st.title("Sector + Commodities Screener (MVP)")
+st.set_page_config(page_title="TrueStone Screener", layout="wide")
+
+st.title("TrueStone Screener")
 st.caption("US 섹터 ETF + 원자재 ETF + SPY 벤치마크 기반. SQLite(screener.db)에서 읽어옵니다.")
+
 
 # Sidebar filters
 st.sidebar.header("Filters")
