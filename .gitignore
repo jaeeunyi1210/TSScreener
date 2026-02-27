@@ -6,7 +6,7 @@ __pycache__/
 .venv/
 
 # SQLite database
-screener.db
+# screener.db  <-- tracked in repo for initial schema
 
 # VS Code
 .vscode/
