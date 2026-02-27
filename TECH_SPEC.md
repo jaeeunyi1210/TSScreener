@@ -1,4 +1,5 @@
 # TrueStone Screener Technical Specification
+# 작업자 : 이재은(jaeeun.yi@fungrep.com)
 
 ## 📁 프로젝트 개요
 
