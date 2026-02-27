@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.env
+.venv/
+
+# SQLite database
+screener.db
+
+# VS Code
+.vscode/
