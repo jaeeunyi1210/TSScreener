@@ -1,5 +1,5 @@
-pandas
-numpy
-streamlit
-SQLAlchemy
-altair
+pandas>=2.0
+numpy>=1.25
+streamlit>=1.54
+SQLAlchemy>=2.0
+altair>=4.2
